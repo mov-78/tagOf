@@ -1,5 +1,8 @@
 # tagOf.js
 
+![build status](https://img.shields.io/travis/pwnn/tagOf.svg?style=flat-square)
+![downloads](https://img.shields.io/npm/dt/tagOf.svg?style=flat-square)
+
 typeof alternative
 
 ```js
