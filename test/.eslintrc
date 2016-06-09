@@ -6,3 +6,4 @@ globals:
 rules:
   no-empty-function: 0
   no-new-wrappers: 0
+  no-use-before-define: 0
