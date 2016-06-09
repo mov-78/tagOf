@@ -1,0 +1,4 @@
+test/
+.eslintrc
+.gitignore
+karma.conf.js
