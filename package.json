@@ -1,0 +1,28 @@
+{
+  "name": "tagOf",
+  "author": "Pwn <hi@pwn.buzz> (http://pwn.buzz)",
+  "description": "typeof alternative",
+  "keywords": [
+    "type",
+    "typeof",
+    "typecheck",
+    "type-check"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/tagOf.js",
+  "bugs": "https://github.com/pwnn/tagOf/issues",
+  "repository": "https://github.com/pwnn/tagOf",
+  "scripts": {
+    "test": "karma start --single-run --browsers PhantomJS"
+  },
+  "devDependencies": {
+    "eslint": "~2.11.1",
+    "eslint-config-pwn-es5": "~3.1.0",
+    "expect": "~1.20.1",
+    "karma": "~0.13.22",
+    "karma-expect": "~1.1.2",
+    "karma-mocha": "~1.0.1",
+    "mocha": "~2.5.3"
+  }
+}
