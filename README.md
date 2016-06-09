@@ -28,4 +28,11 @@ tagOf( new TypeError() ) // 'error'
 tagOf( new URIError() ) // 'error'
 tagOf( /^/i ) // 'regexp'
 tagOf( new RegExp() ) // 'regexp'
+
+tagOf( Symbol( 'tagOf') ) // 'symbol'
+tagOf( Symbol.for( 'tagOf' ) ) // 'symbol'
+tagOf( new Set() ) // 'set'
+tagOf( new WeakSet() ) // 'weakset'
+tagOf( new Map() ) // 'map'
+tagOf( new WeakMap() ) // 'weakmap'
 ```
