@@ -26,7 +26,9 @@
     "karma": "~0.13.22",
     "karma-expect": "~1.1.2",
     "karma-mocha": "~1.0.1",
+    "karma-phantomjs-launcher": "~1.0.0",
     "load-grunt-tasks": "~3.5.0",
-    "mocha": "~2.5.3"
+    "mocha": "~2.5.3",
+    "phantomjs-prebuilt": "~2.1.7"
   }
 }
