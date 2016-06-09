@@ -1,4 +1,4 @@
-describe( 'tagOf' , function () {
+describe.skip( 'tagOf' , function () {
 
   it( 'symbol' , function () {
     expect( tagOf( Symbol( 'tagOf' ) ) ).to.be( 'symbol' )
