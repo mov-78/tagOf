@@ -14,7 +14,7 @@
   "bugs": "https://github.com/pwnn/tagOf/issues",
   "repository": "https://github.com/pwnn/tagOf",
   "scripts": {
-    "test": "karma start"
+    "test": "karma-sauce"
   },
   "devDependencies": {
     "eslint": "~2.11.1",
@@ -23,6 +23,7 @@
     "karma": "~0.13.22",
     "karma-expect": "~1.1.2",
     "karma-mocha": "~1.0.1",
+    "karma-saucelabs-launcher": "0.0.0",
     "mocha": "~2.5.3"
   }
 }
