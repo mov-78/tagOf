@@ -1,4 +1,5 @@
 test/
 .eslintrc
 .gitignore
-karma.conf.js
+.travis.yml
+karma.*.js
