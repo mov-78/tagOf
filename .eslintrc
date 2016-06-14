@@ -1,7 +1,6 @@
 env:
   amd: true
-  browser: true
   node: true
 extends: pwn-es5
-parserOptions:
-  ecmaVersion: 6
+rules:
+  no-unused-expressions: 0
