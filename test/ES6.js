@@ -1,6 +1,3 @@
-var tagOf = typeof tagOf === 'function' ? tagOf : require( '../lib/tagOf' )
-var expect = typeof expect === 'function' ? expect : require( 'expect.js' )
-
 describe( 'tagOf' , function () {
 
   it( 'symbol' , function () {
