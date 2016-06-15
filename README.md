@@ -1,7 +1,6 @@
-# tagOf.js
+# tagOf.js ![version](https://img.shields.io/npm/v/tagOf.svg?style=flat-square) ![build status](https://img.shields.io/travis/pwnn/tagOf.svg?style=flat-square) ![downloads](https://img.shields.io/npm/dt/tagOf.svg?style=flat-square)
 
-![build status](https://img.shields.io/travis/pwnn/tagOf.svg?style=flat-square)
-![downloads](https://img.shields.io/npm/dt/tagOf.svg?style=flat-square)
+![build status](https://saucelabs.com/browser-matrix/pwn-tagof.svg)
 
 typeof alternative
 
@@ -52,9 +51,7 @@ $ npm install --save tagOf
 const tagOf = require( 'tagOf' )
 ```
 
-Browser(works in all browsers, including IE7):
-
-> [tagOf.min.js(233B gzipped)](https://raw.githubusercontent.com/pwnn/tagOf/master/dist/tagOf.min.js)
+Browser:
 
 ```html
 <script src="path/to/tagOf.min.js"></script>
