@@ -3,7 +3,7 @@ describe( 'tagOf' , function () {
   it( 'symbol' , function () {
     if ( typeof Symbol === 'function' ) {
       expect( tagOf( Symbol( 'tagOf' ) ) ).to.be( 'symbol' )
-      expect( tagOf( Symbol.for( 'tagOf' ) ) ).to.be( 'symbol' )
+      expect( tagOf( Symbol[ 'for' ]( 'tagOf' ) ) ).to.be( 'symbol' )
     }
   } )
 
