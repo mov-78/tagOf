@@ -14,7 +14,7 @@
   "bugs": "https://github.com/pwnn/tagOf/issues",
   "repository": "https://github.com/pwnn/tagOf",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start karma.config-ci.js"
   },
   "devDependencies": {
     "eslint": "~2.11.1",
