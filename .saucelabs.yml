@@ -84,10 +84,6 @@ InternetExplorer_6:
   version: '6'
 
 
-iOS_9_3:
-  base: SauceLabs
-  browserName: iPhone
-  version: '9.3'
 iOS_9_2:
   base: SauceLabs
   browserName: iPhone
