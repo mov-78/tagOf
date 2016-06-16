@@ -14,7 +14,8 @@
   "bugs": "https://github.com/pwnn/tagOf/issues",
   "repository": "https://github.com/pwnn/tagOf",
   "scripts": {
-    "test": "karma start karma.conf-ci.js"
+    "test": "mocha && karma start karma.conf-ci.js",
+    "test:dev": "mocha && karma start karma.conf.js"
   },
   "devDependencies": {
     "eslint": "~2.11.1",
