@@ -58,6 +58,9 @@ Firefox_40:
   version: '40'
 
 
+Edge:
+  base: SauceLabs
+  browserName: MicrosoftEdge
 InternetExplorer_11:
   base: SauceLabs
   browserName: Internet Explorer
@@ -81,6 +84,24 @@ InternetExplorer_7:
 InternetExplorer_6:
   base: SauceLabs
   browserName: Internet Explorer
+  version: '6'
+
+
+Safari_9:
+  base: SauceLabs
+  browserName: Safari
+  version: '9'
+Safari_8:
+  base: SauceLabs
+  browserName: Safari
+  version: '8'
+Safari_7:
+  base: SauceLabs
+  browserName: Safari
+  version: '7'
+Safari_6:
+  base: SauceLabs
+  browserName: Safari
   version: '6'
 
 
