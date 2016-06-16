@@ -7,8 +7,8 @@ module.exports = function ( config ) {
   var customLaunchers = yaml.safeLoad( list )
 
   config.set( {
-    frameworks : [ 'expect' , 'mocha' ] ,
-    files : [ './lib/**/*.js' , './test/**/*.js' ] ,
+    frameworks : [ 'jasmine' ] ,
+    files : [ './lib/tagOf.js' , './test/*.js' ] ,
     singleRun : true ,
     captureTimeout : 0 ,
     customLaunchers : customLaunchers ,

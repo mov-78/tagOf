@@ -1,26 +1,27 @@
-var expect = typeof expect === 'function' ? expect : require( 'expect.js' )
-var tagOf = typeof tagOf === 'function' ? tagOf : require( '../lib/tagOf' )
+var root = typeof global === 'object' ? global : this
 
 describe( 'tagOf' , function () {
 
+  var tagOf = root.tagOf
+
   it( 'symbol' , function () {
     if ( typeof Symbol === 'function' ) {
-      expect( tagOf( Symbol( 'tagOf' ) ) ).to.be( 'symbol' )
-      expect( tagOf( Symbol[ 'for' ]( 'tagOf' ) ) ).to.be( 'symbol' )
+      expect( tagOf( Symbol( 'tagOf' ) ) ).toBe( 'symbol' )
+      expect( tagOf( Symbol[ 'for' ]( 'tagOf' ) ) ).toBe( 'symbol' )
     }
   } )
 
   it( 'set' , function () {
     if ( typeof Set === 'function' && typeof WeakSet === 'function' ) {
-      expect( tagOf( new Set() ) ).to.be( 'set' )
-      expect( tagOf( new WeakSet() ) ).to.be( 'weakset' )
+      expect( tagOf( new Set() ) ).toBe( 'set' )
+      expect( tagOf( new WeakSet() ) ).toBe( 'weakset' )
     }
   } )
 
   it( 'map' , function () {
     if ( typeof Map === 'function' && typeof WeakMap === 'function' ) {
-      expect( tagOf( new Map() ) ).to.be( 'map' )
-      expect( tagOf( new WeakMap() ) ).to.be( 'weakmap' )
+      expect( tagOf( new Map() ) ).toBe( 'map' )
+      expect( tagOf( new WeakMap() ) ).toBe( 'weakmap' )
     }
   } )
 
