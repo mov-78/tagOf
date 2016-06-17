@@ -34,7 +34,6 @@ describe( 'tagOf' , function () {
   it( 'object' , function () {
     expect( tagOf( {} ) ).toBe( 'object' )
     expect( tagOf( new Object() ) ).toBe( 'object' )
-    expect( tagOf( new function () {} ) ).toBe( 'object' )
   } )
 
   it( 'array' , function () {
@@ -51,7 +50,7 @@ describe( 'tagOf' , function () {
     expect( tagOf( new Date() ) ).toBe( 'date' )
   } )
 
-  it.skip( 'error' , function () {
+  xit( 'error' , function () {
     expect( tagOf( new Error() ) ).toBe( 'error' )
     expect( tagOf( new EvalError() ) ).toBe( 'evalerror' )
     expect( tagOf( new RangeError() ) ).toBe( 'rangeerror' )
@@ -64,6 +63,19 @@ describe( 'tagOf' , function () {
   it( 'regexp' , function () {
     expect( tagOf( /^/i ) ).toBe( 'regexp' )
     expect( tagOf( new RegExp() ) ).toBe( 'regexp' )
+  } )
+
+  it( 'custom' , function () {
+
+    var Foo = function Foo() {}
+    var Bar = function () {}
+    function Baz() {}
+
+    expect( tagOf( new Foo() ) ).toBe( 'foo' )
+    expect( tagOf( new Bar() ) ).toBe( 'object' )
+    expect( tagOf( new Baz() ) ).toBe( 'baz' )
+    expect( tagOf( new ( function () {} ) ) ).toBe( 'object' ) // eslint-disable-line no-extra-parens
+
   } )
 
 } )
