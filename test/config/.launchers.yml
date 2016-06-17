@@ -61,6 +61,8 @@ Firefox_40:
 Edge:
   base: SauceLabs
   browserName: MicrosoftEdge
+
+
 InternetExplorer_11:
   base: SauceLabs
   browserName: Internet Explorer

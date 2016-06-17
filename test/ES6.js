@@ -1,8 +1,4 @@
-var root = typeof global === 'object' ? global : this
-
 describe( 'tagOf' , function () {
-
-  var tagOf = root.tagOf
 
   it( 'symbol' , function () {
     if ( typeof Symbol === 'function' ) {

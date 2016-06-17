@@ -1,8 +1,4 @@
-var root = typeof global === 'object' ? global : this
-
 describe( 'tagOf' , function () {
-
-  var tagOf = root.tagOf
 
   it( 'null' , function () {
     expect( tagOf( null ) ).toBe( 'null' )
@@ -37,32 +33,32 @@ describe( 'tagOf' , function () {
 
   it( 'object' , function () {
     expect( tagOf( {} ) ).toBe( 'object' )
-    expect( tagOf( new Object() ) ).toBe( 'object' ) // eslint-disable-line no-new-object
+    expect( tagOf( new Object() ) ).toBe( 'object' )
     expect( tagOf( new function () {} ) ).toBe( 'object' )
   } )
 
   it( 'array' , function () {
     expect( tagOf( [] ) ).toBe( 'array' )
-    expect( tagOf( new Array() ) ).toBe( 'array' ) // eslint-disable-line no-array-constructor
+    expect( tagOf( new Array() ) ).toBe( 'array' )
   } )
 
   it( 'function' , function () {
     expect( tagOf( function () {} ) ).toBe( 'function' )
-    expect( tagOf( new Function() ) ).toBe( 'function' ) // eslint-disable-line no-new-func
+    expect( tagOf( new Function() ) ).toBe( 'function' )
   } )
 
   it( 'date' , function () {
     expect( tagOf( new Date() ) ).toBe( 'date' )
   } )
 
-  it( 'error' , function () {
+  it.skip( 'error' , function () {
     expect( tagOf( new Error() ) ).toBe( 'error' )
-    // expect( tagOf( new EvalError() ) ).toBe( 'evalerror' )
-    // expect( tagOf( new RangeError() ) ).toBe( 'rangeerror' )
-    // expect( tagOf( new ReferenceError() ) ).toBe( 'referenceerror' )
-    // expect( tagOf( new SyntaxError() ) ).toBe( 'syntaxerror' )
-    // expect( tagOf( new TypeError() ) ).toBe( 'typeerror' )
-    // expect( tagOf( new URIError() ) ).toBe( 'urierror' )
+    expect( tagOf( new EvalError() ) ).toBe( 'evalerror' )
+    expect( tagOf( new RangeError() ) ).toBe( 'rangeerror' )
+    expect( tagOf( new ReferenceError() ) ).toBe( 'referenceerror' )
+    expect( tagOf( new SyntaxError() ) ).toBe( 'syntaxerror' )
+    expect( tagOf( new TypeError() ) ).toBe( 'typeerror' )
+    expect( tagOf( new URIError() ) ).toBe( 'urierror' )
   } )
 
   it( 'regexp' , function () {

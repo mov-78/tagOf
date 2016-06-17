@@ -3,12 +3,12 @@ var yaml = require( 'js-yaml' )
 
 module.exports = function ( config ) {
 
-  var list = fs.readFileSync( './.saucelabs.yml' )
-  var customLaunchers = yaml.safeLoad( list )
+  var launchers = fs.readFileSync( './.launchers.yml' )
+  var customLaunchers = yaml.safeLoad( launchers )
 
   config.set( {
     frameworks : [ 'jasmine' ] ,
-    files : [ './lib/tagOf.js' , './test/*.js' ] ,
+    files : [ '../../lib/*.js' , '../../test/*.js' ] ,
     singleRun : true ,
     captureTimeout : 0 ,
     customLaunchers : customLaunchers ,

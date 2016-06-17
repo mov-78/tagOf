@@ -14,8 +14,8 @@
   "bugs": "https://github.com/pwnn/tagOf/issues",
   "repository": "https://github.com/pwnn/tagOf",
   "scripts": {
-    "test": "jasmine JASMINE_CONFIG_PATH=test/config.json && karma start karma.conf-ci.js",
-    "test:dev": "jasmine JASMINE_CONFIG_PATH=test/config.json && karma start karma.conf.js"
+    "test": "jasmine JASMINE_CONFIG_PATH=test/config/jasmine.json && karma start test/config/karma.sauce.js",
+    "test:dev": "jasmine JASMINE_CONFIG_PATH=test/config/jasmine.json && karma start test/config/karma.local.js"
   },
   "devDependencies": {
     "eslint": "~2.11.1",

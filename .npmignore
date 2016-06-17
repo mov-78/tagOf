@@ -1,6 +1,4 @@
 test/
 .eslintrc
 .gitignore
-.saucelabs.yml
 .travis.yml
-karma.*.js
