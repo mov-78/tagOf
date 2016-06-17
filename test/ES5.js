@@ -52,12 +52,12 @@ describe( 'tagOf' , function () {
 
   it( 'error' , function () {
     expect( tagOf( new Error() ) ).toBe( 'error' )
-    expect( tagOf( new EvalError() ) ).toBe( 'evalerror' )
-    expect( tagOf( new RangeError() ) ).toBe( 'rangeerror' )
-    expect( tagOf( new ReferenceError() ) ).toBe( 'referenceerror' )
-    expect( tagOf( new SyntaxError() ) ).toBe( 'syntaxerror' )
-    expect( tagOf( new TypeError() ) ).toBe( 'typeerror' )
-    expect( tagOf( new URIError() ) ).toBe( 'urierror' )
+    expect( tagOf( new EvalError() ) ).toBe( 'error' )
+    expect( tagOf( new RangeError() ) ).toBe( 'error' )
+    expect( tagOf( new ReferenceError() ) ).toBe( 'error' )
+    expect( tagOf( new SyntaxError() ) ).toBe( 'error' )
+    expect( tagOf( new TypeError() ) ).toBe( 'error' )
+    expect( tagOf( new URIError() ) ).toBe( 'error' )
   } )
 
   it( 'regexp' , function () {
