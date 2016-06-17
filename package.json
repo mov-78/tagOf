@@ -8,7 +8,7 @@
     "typecheck",
     "type-check"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "lib/tagOf.js",
   "bugs": "https://github.com/pwnn/tagOf/issues",
