@@ -3,7 +3,7 @@ var yaml = require( 'js-yaml' )
 
 module.exports = function ( config ) {
 
-  var launchers = fs.readFileSync( './.launchers.yml' )
+  var launchers = fs.readFileSync( './test/config/.launchers.yml' )
   var customLaunchers = yaml.safeLoad( launchers )
 
   config.set( {
