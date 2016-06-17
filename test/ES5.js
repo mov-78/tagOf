@@ -50,16 +50,6 @@ describe( 'tagOf' , function () {
     expect( tagOf( new Date() ) ).toBe( 'date' )
   } )
 
-  it( 'error' , function () {
-    expect( tagOf( new Error() ) ).toBe( 'error' )
-    expect( tagOf( new EvalError() ) ).toBe( 'error' )
-    expect( tagOf( new RangeError() ) ).toBe( 'error' )
-    expect( tagOf( new ReferenceError() ) ).toBe( 'error' )
-    expect( tagOf( new SyntaxError() ) ).toBe( 'error' )
-    expect( tagOf( new TypeError() ) ).toBe( 'error' )
-    expect( tagOf( new URIError() ) ).toBe( 'error' )
-  } )
-
   it( 'regexp' , function () {
     expect( tagOf( /^/i ) ).toBe( 'regexp' )
     expect( tagOf( new RegExp() ) ).toBe( 'regexp' )
