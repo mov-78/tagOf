@@ -50,7 +50,7 @@ describe( 'tagOf' , function () {
     expect( tagOf( new Date() ) ).toBe( 'date' )
   } )
 
-  xit( 'error' , function () {
+  it( 'error' , function () {
     expect( tagOf( new Error() ) ).toBe( 'error' )
     expect( tagOf( new EvalError() ) ).toBe( 'evalerror' )
     expect( tagOf( new RangeError() ) ).toBe( 'rangeerror' )
