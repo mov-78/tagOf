@@ -1,6 +1,6 @@
 env:
-  amd: true
-  node: true
+    amd: true
+    node: true
 extends: pwn-es5
 rules:
-  no-unused-expressions: 0
+    no-unused-expressions: 0

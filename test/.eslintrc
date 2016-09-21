@@ -1,15 +1,15 @@
 env:
-  es6: true
-  jasmine: true
+    es6: true
+    jasmine: true
 globals:
-  expect: true
-  tagOf: true
+    expect: true
+    tagOf: true
 rules:
-  dot-notation: 0
-  func-style: 0
-  no-array-constructor: 0
-  no-empty-function: 0
-  no-new-func: 0
-  no-new-object: 0
-  no-new-wrappers: 0
-  no-use-before-define: 0
+    dot-notation: 0
+    func-style: 0
+    no-array-constructor: 0
+    no-empty-function: 0
+    no-new-func: 0
+    no-new-object: 0
+    no-new-wrappers: 0
+    no-use-before-define: 0
